@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-set .o errrexit
+set -o errexit
 
 pip install -r requirements.txt
-cd bms
 
+cd bms
 python manage.py migrate
